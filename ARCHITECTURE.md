@@ -21,8 +21,8 @@ graph TB
     end
 
     subgraph "AI Integration Layer"
-        AD1[Chat Adapter (Gemini)]
-        AD2[Image Adapter (Imagen)]
+        AD1["Chat Adapter (Gemini)"]
+        AD2["Image Adapter (Imagen)"]
     end
 
     subgraph "Data Layer"
