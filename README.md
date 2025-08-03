@@ -3,9 +3,9 @@
 This folder is a self-contained, non-running demo of the Playable Character Cards architecture. It is designed to showcase the system’s design, API shape, and agentic development workflow to a technical audience. There is no backend, no Supabase setup, and no runnable code in this demo. All examples are illustrative.
 
 How to navigate this demo:
-- See ARCHITECTURE.md for a concise architectural brief adapted for this demo
-- See docs/api/SPEC.md for endpoint contracts and example payloads
-- See docs/agentic-workflow for the agent orchestration and quality gates
+- See [ARCHITECTURE.md](ARCHITECTURE.md) for a concise architectural brief adapted for this demo
+- See [docs/api/SPEC.md](docs/api/SPEC.md) for endpoint contracts and example payloads
+- See [docs/agentic-workflow](docs/agentic-workflow) for the agent orchestration and quality gates
 
 ---
 
