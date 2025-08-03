@@ -1,0 +1,34 @@
+```mermaid
+graph TB
+    subgraph "Frontend Applications (Examples)"
+        FE1[Therapy UI]
+        FE2[Education UI]
+        FE3[Storytelling UI]
+    end
+
+    subgraph "Edge Functions (Conceptual)"
+        API1[get-public-cards]
+        API2[get-card-details]
+        API3[play-turn]
+    end
+
+    subgraph "AI Integration Layer"
+        AD1[Chat Adapter (Gemini)]
+        AD2[Image Adapter (Imagen)]
+    end
+
+    subgraph "Data Layer"
+        DB[(PostgreSQL + RLS)]
+        ST[Storage]
+    end
+
+    FE1 --> API1
+    FE2 --> API2
+    FE3 --> API3
+    
+    API1 --> DB
+    API2 --> DB
+    API3 --> DB
+    API3 --> AD1
+    AD2 --> ST
+```

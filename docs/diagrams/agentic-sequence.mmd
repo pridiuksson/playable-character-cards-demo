@@ -1,0 +1,22 @@
+```mermaid
+sequenceDiagram
+    participant SA as System Architect
+    participant GC as Context Specialist
+    participant QC as Technical Architect & QA
+    participant FD as Feature Developer
+    participant DW as Documentation Writer
+
+    Note over SA,DW: Major Feature Development Flow
+
+    SA->>GC: 1. Pre-flight Check: Analyze codebase health
+    GC->>SA: 2. Context Report: Existing patterns & risks
+    SA->>QC: 3. Architectural Review: Assess impact & define guidelines
+    QC->>SA: 4. Compliance Plan: Security checks & required patterns
+    SA->>FD: 5. Execution Plan: Detailed implementation steps
+    FD->>CODE: 6. Implementation & Testing
+    FD->>QC: 7. Quality Gate: Request for Review
+    QC->>FD: 8. Validation: Approve/reject based on compliance
+    FD->>DW: 9. Documentation Trigger: Update docs
+    DW->>DOCS: 10. Sync Documentation
+    DW->>SA: 11. Confirmation: Task complete
+```

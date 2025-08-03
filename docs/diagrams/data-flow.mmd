@@ -1,0 +1,13 @@
+```mermaid
+sequenceDiagram
+    participant UI as Client UI
+    participant PT as play-turn (Edge Function)
+    participant AD as Chat Adapter
+    participant DB as Postgres (RLS)
+
+    UI->>PT: POST /play-turn { card_id, user_message }
+    PT->>DB: SELECT card by id (description, goal)
+    PT->>AD: generate reply using card context + user message
+    AD-->>PT: ai_response
+    PT-->>UI: { ai_response, is_goal_achieved, echo }
+```
