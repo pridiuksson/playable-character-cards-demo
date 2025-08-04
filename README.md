@@ -39,6 +39,8 @@ The power of this headless architecture is demonstrated through a live applicati
 
 **🌐 Live Application:** [Character Universe](https://lovable-characters-universe.lovable.app/)
 
+**🏗️ Lovable App Source:** [Github Repo](https://github.com/pridiuksson/lovable-characters-universe)
+
 ![Character Universe - Lovable Build](lovable%20build.jpg)
 
 *Character Universe - A complete AI character chat application built with Lovable consuming the Playable Character Cards API*
